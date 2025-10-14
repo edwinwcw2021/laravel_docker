@@ -21,39 +21,39 @@ My current Docker image is compliant with the Docker Scout vulnerability check. 
 ---  
 
 ### Install and setup procedures
-1. Download the MSSQL backup file [here](https://freeware.vagweb.com/laravel2.bak).
-2. Restore the backup to your MSSQL Developer server.
-![screen 1](images/screen1.png)
-3. Configure Git to support Unix line endings (LF).
+1. Configure Git to support Unix line endings (LF).
 ```bash
 git config --global core.autocrlf input
 ```
-4. Run the script below to clone the Git repository with the Docker setup and PHP source code into the chosen directory. 
+2. Run the script below to clone the Git repository with the Docker setup and PHP source code into the chosen directory. 
 ```bash
 git clone https://github.com/edwinwcw2021/laravel_docker.git
 cd laravel_docker
 ```
-4. Run the following script to pull the Docker image, create the necessary volume, and create the Docker container:
+3. Download the MSSQL backup file [here](https://freeware.vagweb.com/laravel2.bak).
+4. Restore the backup to your MSSQL Developer server.
+![screen 1](images/screen1.png)
+5. Run the following script to pull the Docker image, create the necessary volume, and create the Docker container:
 ```bash
 docker volume create dbdata
-docker compose up -d
+docker compose up -d --build
 ```
-5. Execute the script below to open an Bash shell within the Docker container: 
+6. Execute the script below to open a Bash shell within the Docker container, or use VS Code to run postinstall.sh as shown in the YouTube tutorial: 
 ```bash
 bash.bat
 ```
-6. Execute the post-install script below in a Linux Bash shell: (This script will initialize MySQL and download my tested vendor files for Laravel. You can run it using composer update in the Dev Console in VS Code.)
+7. Execute the post-install script below in a Linux Bash shell: (This script will initialize MySQL and download my tested vendor files for Laravel. You can run it using composer update in the Dev Console in VS Code.)
 ```bash
 sudo su -
 . /usr/src/postinstall.sh
 ```
-7. Configure MySQL and start debugging and laravel. For details, please refer to youtube.
+8. Configure MySQL and start debugging and laravel. For details, please refer to youtube.
 ```bash
 . /usr/src/startlaral.sh
 ```
 ![screen 2](images/screen2.png)
 ![screen 3](images/screen3.png)
-8. Finally. Use Postman to test the RestAPI functionality   
+9. Finally. Use Postman to test the RestAPI functionality   
 
 ---
 
