@@ -1,0 +1,8 @@
+php artisan key:generate
+php artisan config:cache
+php artisan make:migration
+php artisan migrate
+php artisan install:api
+php artisan make:controller
+php artisan make:provider
+
