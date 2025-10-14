@@ -1,3 +1,5 @@
+rm -f ~/mysql.tgz
+rm -f ~/vendor.tgz
 cp /usr/src/startup.sh /usr/local/bin/.
 chmod 755 /usr/local/bin/startup.sh
 cd
