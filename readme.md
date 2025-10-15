@@ -83,4 +83,8 @@ sudo su -
 
 5. I set up this Docker environment over seven months ago, but additional work is needed before it can be released to Docker Hub. For development and debugging PHP code on your local PC, having root access is much more convenient — especially when using the VS Code remote debugger.
 
-[Detailed instructions follow after the prerequisite installation.](https://www.youtube.com/)
+6. he default password for MySQL is mypass, and my local SQL password is sa123. I strongly suggest you use your own strong password and update both the .env and config.php files accordingly.
+
+[Step-by-step guide to build and debug Laravel 12 in Docker — with MySQL, MSSQL, and JWT authentication](https://youtu.be/tdBEzgXELjk)
+
+[Rumble tutorial](https://rumble.com/v70bxi0-complete-docker-setup-for-laravel-12-php-8.4-mssql-mysql-9.2-xdebug-and-vs-.html)
