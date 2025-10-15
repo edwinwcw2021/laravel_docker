@@ -83,7 +83,11 @@ sudo su -
 
 5. I set up this Docker environment over seven months ago, but additional work is needed before it can be released to Docker Hub. For development and debugging PHP code on your local PC, having root access is much more convenient — especially when using the VS Code remote debugger.
 
-6. he default password for MySQL is mypass, and my local SQL password is sa123. I strongly suggest you use your own strong password and update both the .env and config.php files accordingly.
+6. he default password for MySQL is mypass, and my local SQL password is sa123. I strongly suggest you use your own strong password and update both the .env and config.php files accordingly. 
+
+7. If you need MySQL to start every time the container launches, please uncomment (remove the #) the line for /etc/init.d/mysql start inside the /usr/local/bin/startup.sh file.
+
+[docker hub](https://hub.docker.com/r/edwinwcw/ubuntu)
 
 [Step-by-step guide to build and debug Laravel 11 in Docker — with MySQL, MSSQL, and JWT authentication](https://youtu.be/tdBEzgXELjk)
 
