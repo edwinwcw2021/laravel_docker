@@ -31,7 +31,10 @@ git clone https://github.com/edwinwcw2021/laravel_docker.git
 cd laravel_docker
 ```
 3. Download the MSSQL backup file [here](https://freeware.vagweb.com/laravel2.bak).
-4. Restore the backup to your MSSQL Developer server.
+4. Restore the backup to your MSSQL Developer server. (My local SA password is sa123. If you are using a different password, please update it in the .env file and the config.php file accordingly.) Remember to enable TCP/IP in MSSQL after the first installation. To do this, press Windows + R, type SQLServerManager16.msc, and press Enter.
+```bash
+SQLServerManager16.msc
+```
 ![screen 1](images/screen1.png)
 5. Run the following script to pull the Docker image, create the necessary volume, and create the Docker container:
 ```bash

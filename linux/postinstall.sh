@@ -7,7 +7,6 @@ wget https://freeware.vagweb.com/mysql.tgz
 wget https://freeware.vagweb.com/vendor.tgz
 cd /usr/local
 tar zxvf ~/mysql.tgz
-cp /usr/src/my.cnf /usr/local/mysql/.
 cd /var/www/html/restapi
 tar zxvf ~/vendor.tgz
 rm -f ~/mysql.tgz
