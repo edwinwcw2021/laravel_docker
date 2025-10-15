@@ -85,6 +85,6 @@ sudo su -
 
 6. he default password for MySQL is mypass, and my local SQL password is sa123. I strongly suggest you use your own strong password and update both the .env and config.php files accordingly.
 
-[Step-by-step guide to build and debug Laravel 12 in Docker — with MySQL, MSSQL, and JWT authentication](https://youtu.be/tdBEzgXELjk)
+[Step-by-step guide to build and debug Laravel 11 in Docker — with MySQL, MSSQL, and JWT authentication](https://youtu.be/tdBEzgXELjk)
 
 [Rumble tutorial](https://rumble.com/v70bxi0-complete-docker-setup-for-laravel-12-php-8.4-mssql-mysql-9.2-xdebug-and-vs-.html)
